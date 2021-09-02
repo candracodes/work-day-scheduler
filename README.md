@@ -47,4 +47,14 @@ THEN the saved events persist
 ![Official Screenshot](./assets/_guide/Assets/05-third-party-apis-homework-demo.gif)
 
 
+## Frameworks and Libraries
+The following frameworks are used in this application
+
+* [Bootstrap — v4.3.1](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+* [jQuery — v3.2.1](https://api.jquery.com/)
+* [Moment JS — v2.24.0](https://momentjs.com/guides/)
+* [FontAwesome — v5.8.1](https://fontawesome.com/v5.15/how-to-use/on-the-web/referencing-icons/basic-use)
+
+
+
 
