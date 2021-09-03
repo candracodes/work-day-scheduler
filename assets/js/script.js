@@ -63,12 +63,17 @@ $(".saveBtn").on("click", function () {
 
   // Add the previously entered value to the end of the timeKeeper array
   $timeKeeper.push($thisText)
+
+  // Store variables locally
+  localStorage.setItem($thisButtonTime, $thisText);
+
+  // Log messages to ensure variables are working
   console.log($timeKeeper);
   console.log("You've just clicked on the " + $thisButtonTime + " o'clock button");
 
-  //TODO LIST:
-  // add a mechanism to find the ID relative to the button click
-  // store in an object so you can pair where it came from AS WELL as the value of the content
-  // assign a class based on the value being greater or less than the current time
-
 });
+
+// TODO: I want to capture the values of each time slot input without the prompt of a click
+// $("#hour5 .description").val(localStorage.getItem("hour5"));
+// $("#hour6 .description").val(localStorage.getItem("hour6"));
+
