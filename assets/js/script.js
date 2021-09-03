@@ -77,3 +77,14 @@ $(".saveBtn").on("click", function () {
 // $("#hour5 .description").val(localStorage.getItem("hour5"));
 // $("#hour6 .description").val(localStorage.getItem("hour6"));
 
+// TODO: Grasping at straws... can't get this info to stay on the page to save my life
+function getLocalInfo() {
+  var fiveAm = document.getElementById("hour5").value;
+  var fiveAmLocalStorage = localStorage.getItem("5am", fiveAm);
+}
+
+getLocalInfo();
+// document.getElementById("hour6").value = getSavedValue("hour6"); 
+// document.getElementById("hour7").value = getSavedValue("hour7"); 
+
+
