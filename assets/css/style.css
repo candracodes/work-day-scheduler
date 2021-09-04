@@ -51,6 +51,7 @@ textarea {
 
 .description:hover {
   background-color: aliceblue;
+  cursor: pointer;
 }
 
 .hour {

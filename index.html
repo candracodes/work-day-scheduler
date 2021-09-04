@@ -27,165 +27,171 @@
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead">00:00:00</p>
+    <!-- A little razzle dazzle to clear out the form as a whole -->
+    <button type="button" class="btn btn-primary" onclick="clearForm()">Clear Schedule</button>
   </header>
 
   <div class="container">
 
     <!-- Timeblocks go here -->
+    <form id="myTimeSheet">
 
-    <!-- start: 5AM -->
-    <div class="input-group input-group-lg time-block">
-      <div class="input-group-prepend">
-        <span class="input-group-text hour" id="inputGroup-sizing-lg">5 AM</span>
-      </div>
-      <input id="hour5" type="text" class="form-control description" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-lg">
+      <!-- start: 5AM -->
+      <div class="input-group input-group-lg time-block">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg">5 AM</span>
+        </div>
+        <input id="hour5" type="text" class="form-control description" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
         <button class="btn saveBtn" type="button" id="5"><i class="fas fa-save"></i></button>
-    </div>
-    <!-- end: 5AM -->
-
-    <!-- start: 6AM -->
-    <div class="input-group input-group-lg time-block">
-      <div class="input-group-prepend">
-        <span class="input-group-text hour" id="inputGroup-sizing-lg">6 AM</span>
       </div>
-      <input id="hour6" type="text" class="form-control description" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-lg">
+      <!-- end: 5AM -->
+
+      <!-- start: 6AM -->
+      <div class="input-group input-group-lg time-block">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg">6 AM</span>
+        </div>
+        <input id="hour6" type="text" class="form-control description" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
         <button class="btn saveBtn" type="button" id="6"><i class="fas fa-save"></i></button>
-    </div>
-    <!-- end: 6AM -->
-
-    <!-- start: 7AM -->
-    <div class="input-group input-group-lg time-block">
-      <div class="input-group-prepend">
-        <span class="input-group-text hour" id="inputGroup-sizing-lg">7 AM</span>
       </div>
-      <input id="hour7" type="text" class="form-control description" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-lg">
+      <!-- end: 6AM -->
+
+      <!-- start: 7AM -->
+      <div class="input-group input-group-lg time-block">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg">7 AM</span>
+        </div>
+        <input id="hour7" type="text" class="form-control description" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
         <button class="btn saveBtn" type="button" id="7"><i class="fas fa-save"></i></button>
-    </div>
-    <!-- end: 7AM -->
-
-    <!-- start: 8AM -->
-    <div class="input-group input-group-lg time-block">
-      <div class="input-group-prepend">
-        <span class="input-group-text hour" id="inputGroup-sizing-lg">8 AM</span>
       </div>
-      <input id="hour8" type="text" class="form-control description" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-lg">
+      <!-- end: 7AM -->
+
+      <!-- start: 8AM -->
+      <div class="input-group input-group-lg time-block">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg">8 AM</span>
+        </div>
+        <input id="hour8" type="text" class="form-control description" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
         <button class="btn saveBtn" type="button" id="8"><i class="fas fa-save"></i></button>
-    </div>
-    <!-- end: 8AM -->
-
-    <!-- start: 9AM -->
-    <div class="input-group input-group-lg time-block">
-      <div class="input-group-prepend">
-        <span class="input-group-text hour" id="inputGroup-sizing-lg">9 AM</span>
       </div>
-      <input id="hour9" type="text" class="form-control description" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-lg">
+      <!-- end: 8AM -->
+
+      <!-- start: 9AM -->
+      <div class="input-group input-group-lg time-block">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg">9 AM</span>
+        </div>
+        <input id="hour9" type="text" class="form-control description" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
         <button class="btn saveBtn" type="button" id="9"><i class="fas fa-save"></i></button>
-    </div>
-    <!-- end: 9AM -->
-
-    <!-- start: 10AM -->
-    <div class="input-group input-group-lg time-block">
-      <div class="input-group-prepend">
-        <span class="input-group-text hour" id="inputGroup-sizing-lg">10 AM</span>
       </div>
-      <input id="hour10" type="text" class="form-control description" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-lg">
-      <button class="btn saveBtn" type="button" id="10"><i class="fas fa-save"></i></button>
-    </div>
-    <!-- end: 10AM -->
+      <!-- end: 9AM -->
 
-    <!-- start: 11AM -->
-    <div class="input-group input-group-lg time-block">
-      <div class="input-group-prepend">
-        <span class="input-group-text hour" id="inputGroup-sizing-lg">11 AM</span>
+      <!-- start: 10AM -->
+      <div class="input-group input-group-lg time-block">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg">10 AM</span>
+        </div>
+        <input id="hour10" type="text" class="form-control description" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
+        <button class="btn saveBtn" type="button" id="10"><i class="fas fa-save"></i></button>
       </div>
-      <input id="hour11" type="text" class="form-control description" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-lg">
-      <button class="btn saveBtn" type="button" id="11"><i class="fas fa-save"></i></button>
-    </div>
-    <!-- end: 11AM -->
+      <!-- end: 10AM -->
 
-    <!-- start: 12PM -->
-    <div class="input-group input-group-lg time-block">
-      <div class="input-group-prepend">
-        <span class="input-group-text hour" id="inputGroup-sizing-lg">12 PM</span>
+      <!-- start: 11AM -->
+      <div class="input-group input-group-lg time-block">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg">11 AM</span>
+        </div>
+        <input id="hour11" type="text" class="form-control description" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
+        <button class="btn saveBtn" type="button" id="11"><i class="fas fa-save"></i></button>
       </div>
-      <input id="hour12" type="text" class="form-control description" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-lg">
+      <!-- end: 11AM -->
+
+      <!-- start: 12PM -->
+      <div class="input-group input-group-lg time-block">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg">12 PM</span>
+        </div>
+        <input id="hour12" type="text" class="form-control description" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
         <button class="btn saveBtn" type="button" id="12"><i class="fas fa-save"></i></button>
-    </div>
-    <!-- end: 12PM -->
-
-    <!-- start: 1PM OR 1300 -->
-    <div class="input-group input-group-lg time-block">
-      <div class="input-group-prepend">
-        <span class="input-group-text hour" id="inputGroup-sizing-lg">1 PM</span>
       </div>
-      <input id="hour13" type="text" class="form-control description" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-lg">
+      <!-- end: 12PM -->
+
+      <!-- start: 1PM OR 1300 -->
+      <div class="input-group input-group-lg time-block">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg">1 PM</span>
+        </div>
+        <input id="hour13" type="text" class="form-control description" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
         <button class="btn saveBtn" type="button" id="13"><i class="fas fa-save"></i></button>
-    </div>
-    <!-- end: 1PM OR 1300 -->
-
-    <!-- start: 2PM OR 1400 -->
-    <div class="input-group input-group-lg time-block">
-      <div class="input-group-prepend">
-        <span class="input-group-text hour" id="inputGroup-sizing-lg">2 PM</span>
       </div>
-      <input id="hour14" type="text" class="form-control description" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-lg">
+      <!-- end: 1PM OR 1300 -->
+
+      <!-- start: 2PM OR 1400 -->
+      <div class="input-group input-group-lg time-block">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg">2 PM</span>
+        </div>
+        <input id="hour14" type="text" class="form-control description" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
         <button class="btn saveBtn" type="button" id="14"><i class="fas fa-save"></i></button>
-    </div>
-    <!-- end: 2PM OR 1400 -->
-
-    <!-- start: 3PM OR 1500 -->
-    <div class="input-group input-group-lg time-block">
-      <div class="input-group-prepend">
-        <span class="input-group-text hour" id="inputGroup-sizing-lg">3 PM</span>
       </div>
-      <input id="hour15" type="text" class="form-control description" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-lg">
+      <!-- end: 2PM OR 1400 -->
+
+      <!-- start: 3PM OR 1500 -->
+      <div class="input-group input-group-lg time-block">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg">3 PM</span>
+        </div>
+        <input id="hour15" type="text" class="form-control description" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
         <button class="btn saveBtn" type="button" id="15"><i class="fas fa-save"></i></button>
-    </div>
-    <!-- end: 3PM OR 1500 -->
-
-    <!-- start: 4PM OR 1600 -->
-    <div class="input-group input-group-lg time-block">
-      <div class="input-group-prepend">
-        <span class="input-group-text hour" id="inputGroup-sizing-lg">4 PM</span>
       </div>
-      <input id="hour16" type="text" class="form-control description" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-lg">
+      <!-- end: 3PM OR 1500 -->
+
+      <!-- start: 4PM OR 1600 -->
+      <div class="input-group input-group-lg time-block">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg">4 PM</span>
+        </div>
+        <input id="hour16" type="text" class="form-control description" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
         <button class="btn saveBtn" type="button" id="16"><i class="fas fa-save"></i></button>
-    </div>
-    <!-- end: 4PM OR 1600 -->
-
-    <!-- start: 5PM OR 1700 -->
-    <div class="input-group input-group-lg time-block">
-      <div class="input-group-prepend">
-        <span class="input-group-text hour" id="inputGroup-sizing-lg">5 PM</span>
       </div>
-      <input id="hour17" type="text" class="form-control description" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-lg">
+      <!-- end: 4PM OR 1600 -->
+
+      <!-- start: 5PM OR 1700 -->
+      <div class="input-group input-group-lg time-block">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg">5 PM</span>
+        </div>
+        <input id="hour17" type="text" class="form-control description" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
         <button class="btn saveBtn" type="button" id="17"><i class="fas fa-save"></i></button>
-    </div>
-    <!-- end: 5PM OR 1700 -->
-
-    <!-- start: 6PM OR 1800 -->
-    <div class="input-group input-group-lg time-block lastHour">
-      <div class="input-group-prepend">
-        <span class="input-group-text hour" id="inputGroup-sizing-lg">6 PM</span>
       </div>
-      <input id="hour18" type="text" class="form-control description" aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-lg">
+      <!-- end: 5PM OR 1700 -->
+
+      <!-- start: 6PM OR 1800 -->
+      <div class="input-group input-group-lg time-block lastHour">
+        <div class="input-group-prepend">
+          <span class="input-group-text hour" id="inputGroup-sizing-lg">6 PM</span>
+        </div>
+        <input id="hour18" type="text" class="form-control description" aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg">
         <button class="btn saveBtn" type="button" id="18"><i class="fas fa-save"></i></button>
-    </div>
-    <!-- end: 6PM OR 1800 -->
+      </div>
+      <!-- end: 6PM OR 1800 -->
+
+    </form>
+
 
 
   </div>
