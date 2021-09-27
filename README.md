@@ -56,5 +56,7 @@ The following frameworks are used in this application
 * [FontAwesome — v5.8.1](https://fontawesome.com/v5.15/how-to-use/on-the-web/referencing-icons/basic-use)
 
 
-
+## Licensing
+The project is made possible with the following Licensing:
+- [MIT](license.txt)
 
