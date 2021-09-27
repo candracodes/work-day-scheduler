@@ -1,4 +1,4 @@
-# work-day-scheduler
+# Work Day Scheduler
 A simple calendar application that allows a user to save events for each hour of the day.
 
 ## Important URLs
@@ -60,3 +60,5 @@ The following frameworks are used in this application
 The project is made possible with the following Licensing:
 - [MIT](license.txt)
 
+## Contact Developer
+For additional information, contact this application's developer: letschat@candracodes.com
