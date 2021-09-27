@@ -46,6 +46,11 @@ THEN the saved events persist
 
 ![Official Screenshot](./assets/_guide/Assets/05-third-party-apis-homework-demo.gif)
 
+* Here are screenshots from the deployed application
+
+![Screenshot 1](./assets/_guide/Assets/screenshot1.png)
+![Screenshot 2](./assets/_guide/Assets/screenshot2.png)
+
 
 ## Frameworks and Libraries
 The following frameworks are used in this application
